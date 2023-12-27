@@ -14,17 +14,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grpc/grpc-js@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@grpc/grpc-js@npm:1.7.3"
+"@grpc/grpc-js@npm:1.9.13":
+  version: 1.9.13
+  resolution: "@grpc/grpc-js@npm:1.9.13"
   dependencies:
-    "@grpc/proto-loader": "npm:^0.7.0"
+    "@grpc/proto-loader": "npm:^0.7.8"
     "@types/node": "npm:>=12.12.47"
-  checksum: f9206fd4b7a4d46ed9e113125491fd5b7e103afc2e058e7b528406227496986c63099995030e29b12d928c89f67c39369a2fda450b13958e3957506cafb39fb4
+  checksum: 5a2e5f88fa684e03bbfd13d5e0dffd1ea4eaacc87220bad76f758e85abb12668c1e44656fb2379f88a446f463932087463c8f0715db4f1b1747354fd4beeaa4f
   languageName: node
   linkType: hard
 
-"@grpc/proto-loader@npm:^0.7.0":
+"@grpc/proto-loader@npm:^0.7.8":
   version: 0.7.10
   resolution: "@grpc/proto-loader@npm:0.7.10"
   dependencies:
@@ -470,7 +470,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "grpc-sandbox@workspace:."
   dependencies:
-    "@grpc/grpc-js": "npm:1.7.3"
+    "@grpc/grpc-js": "npm:1.9.13"
     "@types/google-protobuf": "npm:^3"
     google-protobuf: "npm:^3.21.2"
     grpc-tools: "npm:^1.12.4"
