@@ -9,6 +9,7 @@ async function call() {
       credentials.createInsecure()
     );
     client.getBook(new GetBookRequest().setId(123), (err, resp) => {
+      client.close();
       if (err) {
         console.error(err);
         resolve(null);
