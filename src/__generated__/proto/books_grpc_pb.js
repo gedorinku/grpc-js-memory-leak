@@ -1,7 +1,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 'use strict';
-var grpc = require('@grpc/grpc-js');
+var grpc = require('grpc');
 var proto_books_pb = require('../proto/books_pb.js');
 
 function serialize_sample_books_Book(arg) {

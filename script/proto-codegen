@@ -8,6 +8,6 @@ protoc \
   --plugin=protoc-gen-grpc=`yarn bin grpc_tools_node_protoc_plugin` \
   --plugin=protoc-gen-ts=`yarn bin protoc-gen-ts` \
   --js_out="$OUT_DIR" --js_opt="import_style=commonjs,binary" \
-  --grpc_out=grpc_js:"$OUT_DIR" \
-  --ts_out=grpc_js:"$OUT_DIR" \
+  --grpc_out="$OUT_DIR" \
+  --ts_out="$OUT_DIR" \
   "proto/books.proto"

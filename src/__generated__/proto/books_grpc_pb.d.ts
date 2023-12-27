@@ -4,7 +4,7 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as grpc from "@grpc/grpc-js";
+import * as grpc from "grpc";
 import * as proto_books_pb from "../proto/books_pb";
 
 interface IBookServiceService extends grpc.ServiceDefinition<grpc.UntypedServiceImplementation> {
@@ -23,7 +23,7 @@ interface IBookServiceService_IGetBook extends grpc.MethodDefinition<proto_books
 
 export const BookServiceService: IBookServiceService;
 
-export interface IBookServiceServer extends grpc.UntypedServiceImplementation {
+export interface IBookServiceServer {
     getBook: grpc.handleUnaryCall<proto_books_pb.GetBookRequest, proto_books_pb.Book>;
 }
 
@@ -34,7 +34,7 @@ export interface IBookServiceClient {
 }
 
 export class BookServiceClient extends grpc.Client implements IBookServiceClient {
-    constructor(address: string, credentials: grpc.ChannelCredentials, options?: Partial<grpc.ClientOptions>);
+    constructor(address: string, credentials: grpc.ChannelCredentials, options?: object);
     public getBook(request: proto_books_pb.GetBookRequest, callback: (error: grpc.ServiceError | null, response: proto_books_pb.Book) => void): grpc.ClientUnaryCall;
     public getBook(request: proto_books_pb.GetBookRequest, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: proto_books_pb.Book) => void): grpc.ClientUnaryCall;
     public getBook(request: proto_books_pb.GetBookRequest, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: proto_books_pb.Book) => void): grpc.ClientUnaryCall;

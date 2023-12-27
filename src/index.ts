@@ -1,4 +1,4 @@
-import { credentials } from "@grpc/grpc-js";
+import { credentials } from "grpc";
 import { BookServiceClient } from "./__generated__/proto/books_grpc_pb";
 import { Book, GetBookRequest } from "./__generated__/proto/books_pb";
 
